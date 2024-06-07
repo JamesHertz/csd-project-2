@@ -30,14 +30,6 @@ def main(args : list[str]):
     else:
         max_group_size = groups.max().iloc[0]
         print(f'This dataset is k anonymous for k = {k} groups size ranging in [{min_group_size}, {max_group_size}]')
-    # print(min_group_size)
-    # print(groups)
-    # print(groups.min()[0])
-
-    
-
-
-
 
 if __name__ == '__main__':
     main(sys.argv)
