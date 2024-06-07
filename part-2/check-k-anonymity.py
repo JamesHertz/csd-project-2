@@ -29,7 +29,7 @@ def main(args : list[str]):
         print(groups.head().iloc[:, 0])
     else:
         max_group_size = groups.max().iloc[0]
-        print(f'This dataset is not k anonymous for k = {k} groups size ranging in [{min_group_size}, {max_group_size}]')
+        print(f'This dataset is k anonymous for k = {k} groups size ranging in [{min_group_size}, {max_group_size}]')
     # print(min_group_size)
     # print(groups)
     # print(groups.min()[0])
