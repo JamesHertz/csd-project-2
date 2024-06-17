@@ -80,7 +80,7 @@ def execute_query( db : sqlite3.Connection, query : tuple[int, str]):
     sensitivity = entry['sensitivity']
     if option == 2:
         cursor = db.execute('select count(*) from ' + sql_query.split('from', maxsplit=1)[1])
-        sensitivity  /= len(cursor.fetchall())
+        sensitivity += 1 #/= len(cursor.fetchall())
 
     rows = cursor.fetchall()
     resp = 0 if rows == [] else rows[0][0]
